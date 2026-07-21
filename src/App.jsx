@@ -1,4 +1,5 @@
 import './App.css'
+import { Reveal } from './Reveal'
 
 function App() {
   return (
@@ -27,12 +28,12 @@ function App() {
             <div className="hero-brown-box">
               <div className="hero-image"></div>
             </div>
-            <div className="hero-intro">
+            <Reveal className="hero-intro" delay={0.2}>
               I am a Computer Science student.<br />
               I am a full stack developer. I am developing my skills in AI/ML and UI/UX dev.<br />
               I am passionate about programming and technology<br />
               I wanna builtt
-            </div>
+            </Reveal>
           </div>
           <div className="hero-socials">
             <p>IG: @ixnahh_</p>
@@ -58,7 +59,7 @@ function App() {
         </header>
 
         <div className="intro-content">
-          <div className="intro-text-col">
+          <Reveal className="intro-text-col" delay={0.1}>
             <h1 className="main-title">Hello,<br />I'm Ayana !</h1>
             <p className="intro-desc">
               I am a Computer Science student.<br />
@@ -66,7 +67,7 @@ function App() {
               I am passionate about programming and technology<br />
               I wanna built the next big thing
             </p>
-          </div>
+          </Reveal>
         </div>
 
         {/* OVERLAPPING CONTACT CARD */}
@@ -93,7 +94,7 @@ function App() {
       <section className="section-skills bg-green">
         <div className="grid-2-col">
           <div className="edu-col">
-            <div className="experience-box">
+            <Reveal className="experience-box" delay={0.1}>
               <h2 className="section-title dark-text">Experience</h2>
               <div className="timeline dark-timeline">
                 <div className="timeline-item">
@@ -125,33 +126,33 @@ function App() {
                 <span className="pill dark-pill">#Detail-oriented</span>
                 <span className="pill dark-pill">#Adaptability</span>
               </div>
-            </div>
+            </Reveal>
           </div>
 
           <div className="skills-col">
             <h2 className="section-title yellow-text">Skills</h2>
 
             <div className="skills-category-list">
-              <div className="skill-category">
+              <Reveal className="skill-category" delay={0.1}>
                 <h3>Programming Languages:</h3>
                 <p>Python, C++, C, JavaScript, MATLAB, Java, SQL</p>
-              </div>
-              <div className="skill-category">
+              </Reveal>
+              <Reveal className="skill-category" delay={0.2}>
                 <h3>Web Technologies:</h3>
                 <p>HTML, CSS, JavaScript, Node.js(Express), React, Mysql, Flutter, React native</p>
-              </div>
-              <div className="skill-category">
+              </Reveal>
+              <Reveal className="skill-category" delay={0.3}>
                 <h3>Development Skills:</h3>
                 <p>Object-Oriented Programming (OOP), Debugging, Code Optimization, Game Development (Frontend)</p>
-              </div>
-              <div className="skill-category">
+              </Reveal>
+              <Reveal className="skill-category" delay={0.4}>
                 <h3>AI/ML Skills:</h3>
                 <p>Machine Learning, Image Classification, Natural Language Processing (NLP), Neural Networks, MATLAB Deep Learning and machine learning Toolbox</p>
-              </div>
-              <div className="skill-category">
+              </Reveal>
+              <Reveal className="skill-category" delay={0.5}>
                 <h3>Tools & Technologies:</h3>
                 <p>Git, Linux, Arduino, Servo Motors, MATLAB.</p>
-              </div>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -161,7 +162,7 @@ function App() {
       <section className="section-more bg-cream">
         <div className="grid-2-col">
           <div className="exp-col">
-            <div className="education-section">
+            <Reveal className="education-section" delay={0.1}>
               <h2 className="section-title dark-text">Education</h2>
               <div className="timeline dark-timeline large-timeline">
                 <div className="timeline-item">
@@ -179,7 +180,7 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
 
           <div className="more-col">
@@ -225,6 +226,22 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className="site-footer bg-green">
+        <Reveal className="footer-content" delay={0.2}>
+          <h2 className="footer-title">Let's build<br/>something great.</h2>
+          <div className="footer-bottom">
+            <div className="footer-logo"><span>✦</span> Ayana Anil</div>
+            <div className="footer-socials">
+              <a href="#">LinkedIn</a>
+              <a href="#">GitHub</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </Reveal>
+        <div className="footer-huge-text">AYANA</div>
+      </footer>
 
     </div>
   )

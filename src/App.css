@@ -443,7 +443,6 @@
 /* SECTION 4: EXPERIENCE & MORE */
 .section-more {
   padding: 6rem 4rem 6rem 4rem;
-  min-height: 100vh;
 }
 
 .experience-box {
@@ -527,4 +526,163 @@
 .hobby span {
   font-size: 0.85rem;
   color: #555;
+}
+
+/* FOOTER */
+.site-footer {
+  position: relative;
+  padding: 6rem 4rem 2rem 4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 50vh;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--color-accent);
+  line-height: 1.1;
+  margin-bottom: auto;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer-logo span {
+  color: var(--color-accent);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 2rem;
+}
+.footer-socials a {
+  color: var(--color-cream);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.footer-socials a:hover {
+  color: var(--color-accent);
+}
+
+.footer-huge-text {
+  position: absolute;
+  bottom: -4vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-serif);
+  font-size: 24vw;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 0.75;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================
+   HOVER TRANSITIONS & EFFECTS
+   ============================ */
+
+/* Links & Buttons */
+.nav-links a {
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+.btn-primary {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+  display: inline-block;
+}
+.btn-primary:hover {
+  transform: translateY(-4px);
+  background-color: var(--color-black);
+  color: var(--color-cream);
+}
+.btn-linkedin {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+.btn-linkedin:hover {
+  transform: translateY(-4px);
+  background-color: var(--color-black);
+}
+.footer-socials a {
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+.footer-socials a:hover {
+  color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+/* Images & Cards */
+.hero-image {
+  transition: transform 0.4s ease;
+}
+.hero-image:hover {
+  transform: translate(12px, 12px);
+}
+.hero-brown-box {
+  transition: transform 0.4s ease;
+}
+.hero-image-section:hover .hero-brown-box {
+  transform: translate(-5px, -5px);
+}
+
+.contact-photo {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contact-photo:hover {
+  transform: scale(1.03);
+}
+
+/* Interactive Elements */
+.pill {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease;
+}
+.pill:hover {
+  transform: translateY(-4px);
+  background-color: var(--color-accent);
+  color: var(--color-black);
+}
+
+.hobby {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: default;
+}
+.hobby:hover {
+  transform: scale(1.15) translateY(-5px);
+}
+
+/* Timeline */
+.timeline-item {
+  transition: transform 0.3s ease;
+}
+.timeline-item:hover {
+  transform: translateX(12px);
 }
