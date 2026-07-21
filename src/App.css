@@ -144,7 +144,7 @@
   max-width: 350px;
   max-height: 450px;
   background-color: #333;
-  background-image: url('https://placehold.co/350x450/444/999?text=Photo');
+  background-image: url('./assets/hero-image.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -214,12 +214,12 @@
 
 .intro-content {
   margin-top: 6rem;
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .main-title {
   font-family: var(--font-serif);
-  font-size: 5rem;
+  font-size: 7.5rem;
   font-weight: 900;
   line-height: 1.1;
   color: var(--color-black);
@@ -227,10 +227,10 @@
 }
 
 .intro-desc {
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   margin-bottom: 3rem;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .btn-linkedin {
@@ -249,8 +249,8 @@
 .contact-wrapper {
   position: absolute;
   bottom: -200px; /* Overlap into the next section */
-  right: 8%;
-  width: 380px;
+  right: 10%;
+  width: 500px;
   z-index: 30;
 }
 
@@ -266,12 +266,12 @@
 
 .contact-photo {
   width: 100%;
-  height: 350px;
+  height: 500px;
   background-color: #ccc;
-  background-image: url('https://placehold.co/320x350/999/333?text=Profile');
+  background-image: url('./assets/profile.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 200px 200px 0 0;
+  border-radius: 250px 250px 0 0;
   position: relative;
 }
 
@@ -285,11 +285,11 @@
   font-weight: 600;
 }
 .contact-badge-left {
-  top: 150px;
+  top: 200px;
   left: -80px;
 }
 .contact-badge-right {
-  top: 250px;
+  top: 350px;
   right: -80px;
 }
 
@@ -359,16 +359,19 @@
 }
 .timeline-item .year {
   font-weight: 700;
-  min-width: 100px;
+  min-width: 120px;
+  font-size: 1.1rem;
 }
 .timeline-item .details strong {
   display: block;
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 .timeline-item .details span {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: #ccc;
+  display: block;
 }
 
 .skills-grid {
@@ -397,6 +400,22 @@
   justify-content: center;
   font-weight: 700;
   border-radius: 4px;
+}
+
+.skills-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.skill-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.skill-category p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e0e0e0;
 }
 
 .dev-list {
@@ -442,6 +461,22 @@
 .dark-timeline .timeline-item .details span {
   color: var(--color-black);
   opacity: 0.8;
+}
+
+.large-timeline .timeline-item {
+  margin-bottom: 4rem;
+}
+.large-timeline .timeline-item .year {
+  font-size: 1.3rem;
+  min-width: 150px;
+}
+.large-timeline .timeline-item .details strong {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+.large-timeline .timeline-item .details span {
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
 .dark-pills {
