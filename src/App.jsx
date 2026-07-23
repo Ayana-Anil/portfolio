@@ -67,6 +67,9 @@ function App() {
               I am passionate about programming and technology<br />
               I wanna built the next big thing
             </p>
+            <a href="https://linkedin.com/in/ayana-anil" className="btn-linkedin" target="_blank" rel="noopener noreferrer">
+              <span className="search-icon">🔍</span> linkedin.com/in/ayana-anil
+            </a>
           </Reveal>
         </div>
 
@@ -230,7 +233,7 @@ function App() {
       {/* FOOTER */}
       <footer className="site-footer bg-green">
         <Reveal className="footer-content" delay={0.2}>
-          <h2 className="footer-title">Let's build<br/>something great.</h2>
+          <h2 className="footer-title">Let's build<br />something great.</h2>
           <div className="footer-bottom">
             <div className="footer-logo"><span>✦</span> Ayana Anil</div>
             <div className="footer-socials">
